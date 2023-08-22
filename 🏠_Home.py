@@ -48,10 +48,7 @@ def main():
     st.markdown('---')
     
     with st.container():
-        f = folium.Figure(width=1920, height=1080)
-
-        m = folium.Map(max_bounds=True).add_to(f)
-    
+        m = folium.Map()
         marker_cluster = MarkerCluster().add_to(m)
     
         for _, line in df.iterrows():
