@@ -1,6 +1,6 @@
 import streamlit as st
 import folium
-from streamlit_folium import st_folium
+from streamlit_folium import folium_Static
 from folium.plugins import MarkerCluster
 
 
@@ -11,11 +11,7 @@ def unique_numbers(dataframe, column) -> int:
 
 
 def create_map(dataframe):
-    
-    f = folium.Figure(width=1920, height=1080)
-
-    m = folium.Map(max_bounds=True).add_to(f)
-
+    m = folium.Map()
     marker_cluster = MarkerCluster().add_to(m)
 
     for _, line in dataframe.iterrows():
@@ -43,6 +39,6 @@ def create_map(dataframe):
             icon=folium.Icon(color=color, icon='home', prefix='fa'),
         ).add_to(marker_cluster)
 
-    st_folium(m, width=1024, height=600, returned_objects=[])
+    folium_static(m, width=1024, height=600)
     
     return None
