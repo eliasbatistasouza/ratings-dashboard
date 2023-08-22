@@ -90,7 +90,7 @@ def main():
     
         st.markdown('---')
         
-    style_metric_cards(background_color = '#1a1c24',  border_color='white', border_left_color='white')
+    style_metric_cards(border_color='ff5252', border_left_color='ff5252')
 
     with st.container():
         st.markdown("<h3 style='text-align: center'>Top 10 Restaurants</h3>",unsafe_allow_html=True)
