@@ -54,7 +54,7 @@ def main():
     
         marker_cluster = MarkerCluster().add_to(m)
     
-        for _, line in dataframe.iterrows():
+        for _, line in df.iterrows():
     
             name = line['restaurant_name']
             price_for_two = line['average_cost_for_two']
