@@ -1,6 +1,6 @@
 import streamlit as st
 import folium
-from streamlit_folium import st_folium
+from streamlit_folium import folium_static
 from folium.plugins import MarkerCluster
 
 from utils import general_data
@@ -79,7 +79,7 @@ def main():
                 icon=folium.Icon(color=color, icon='home', prefix='fa'),
             ).add_to(marker_cluster)
     
-        st_folium(m, width=1024, height=600, returned_objects=[])
+        folium_static(m, width=1024, height=600)
     return None
 
 if __name__ == '__main__':
