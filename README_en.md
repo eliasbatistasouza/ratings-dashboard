@@ -1,5 +1,5 @@
 <!--- LANGUAGE --->
-<h6 align="center"> [ <a href="/README.md">PORTUGUÊS</a> | <a href="/README_en.md">ENGLISH</a> ]
+<h6 align="center"> <a href="/README.md">PORTUGUÊS</a> | <a href="/README_en.md">ENGLISH</a>
 </h6>
 
 <br>
